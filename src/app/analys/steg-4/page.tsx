@@ -29,7 +29,7 @@ export default function Steg4Page() {
   } = useForm<MaintenancePlan>({
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     resolver: zodResolver(maintenancePlanSchema) as any,
-    defaultValues: {
+    values: {
       poster: underhallsposter.length > 0 ? underhallsposter : EXAMPLE_MAINTENANCE_ITEMS,
     },
   });

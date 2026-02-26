@@ -346,7 +346,7 @@ export default function ResultatPage() {
         <Button variant="outline" onClick={() => router.push("/analys/steg-4")}>
           ← Tillbaka till underhållsplan
         </Button>
-        <Button variant="outline" onClick={() => router.push("/")}>
+        <Button variant="outline" onClick={() => { store.reset(); router.push("/"); }}>
           Ny analys
         </Button>
       </div>

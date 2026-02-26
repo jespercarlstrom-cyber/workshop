@@ -28,8 +28,8 @@ export default function Steg2Page() {
   } = useForm<BalanceSheet>({
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     resolver: zodResolver(balanceSheetSchema) as any,
-    defaultValues: {
-      kassaBank: undefined,
+    values: {
+      kassaBank: undefined as unknown as number,
       forutbetaldaKostnader: 0,
       ovrigaOmsattningstillgangar: 0,
       banklan: 0,

@@ -29,11 +29,11 @@ export default function Steg1Page() {
   } = useForm<PropertyInfo>({
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     resolver: zodResolver(propertyInfoSchema) as any,
-    defaultValues: {
+    values: {
       kommun: "",
       fastighetsbeteckning: "",
-      bta: undefined,
-      totalBostadsyta: undefined,
+      bta: undefined as unknown as number,
+      totalBostadsyta: undefined as unknown as number,
       vardeHyreslagenheter: 0,
       arTomtratt: false,
       tomtrattBundenTill: undefined,

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ResumeBanner } from "@/components/resume-banner";
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
           <p className="text-lg text-muted-foreground leading-relaxed max-w-xl mx-auto">
             {"Analysera om din bostadsr\u00e4ttsf\u00f6renings avgift \u00e4r h\u00e5llbar p\u00e5 l\u00e5ng sikt. Baserat p\u00e5 underh\u00e5llsplan, balansr\u00e4kning och resultatr\u00e4kning f\u00e5r du en tydlig rekommendation."}
           </p>
+
+          <ResumeBanner />
 
           <div className="flex flex-col items-center gap-4">
             <Link

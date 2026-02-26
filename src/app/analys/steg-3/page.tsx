@@ -28,13 +28,13 @@ export default function Steg3Page() {
   } = useForm<IncomeStatement>({
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     resolver: zodResolver(incomeStatementSchema) as any,
-    defaultValues: {
-      arsresultat: undefined,
-      medlemsavgifter: undefined,
+    values: {
+      arsresultat: undefined as unknown as number,
+      medlemsavgifter: undefined as unknown as number,
       avskrivningar: 0,
       planeradeUnderhallsutgifter: 0,
       tomtrattskostnad: 0,
-      rantenetto: undefined,
+      rantenetto: undefined as unknown as number,
       ...resultatrakning,
     },
   });
